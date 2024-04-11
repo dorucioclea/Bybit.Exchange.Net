@@ -29,7 +29,7 @@ namespace Bybit.Exchange.Net.Models.V5.Market
         /// spot/linear/inverse has Trading only
         /// </para>
         /// </summary>
-        public Status? status { get; set; } = default!;
+        public bool? status { get; set; } = default!;
 
         /// <summary>
         /// <value>Property <c>baseCoin</c></value>
