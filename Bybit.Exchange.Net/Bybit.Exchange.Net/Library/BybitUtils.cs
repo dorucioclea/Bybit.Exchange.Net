@@ -169,7 +169,7 @@ namespace Bybit.Exchange.Net.Library
             {
                 results = response.Response?.ToJsonObject<BybitResponse<T>>();
                 results ??= new BybitResponse<T>();
-                results.Infomation = response.ToObject<BybitResponse>();
+                results.Information = response.ToObject<BybitResponse>();
             }
             catch (Exception ex)
             {
