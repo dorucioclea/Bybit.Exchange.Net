@@ -110,13 +110,5 @@ Before getting started, please take a moment to read through the following guide
 ### Reporting Bugs
 If you have found a bug in our project, please open an issue on GitHub. When reporting a bug, please include as much detail as possible about the issue and steps to reproduce it.
 
-## Support Us with a Donation
-Consider making a donation in your preferred cryptocurrency to support our project. If the cryptocurrency you want to donate is not listed here, please reach out to us.
-
-- **USDT:** `TG8dYGsFU3euoMcjaMGq7whpFKMFh8J6u7`
-- **USDC:** `0x273b11e05862ee18a6dec243cbdbd0c12132da5d`
-
-Your contribution helps us continue our work and is greatly appreciated!
-
 ## License
 By contributing to our project, you agree that your contributions will be licensed under the [LICENSE][license-url]
