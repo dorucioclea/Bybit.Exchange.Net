@@ -76,7 +76,7 @@ namespace Bybit.Exchange.Net.Models.Common
         /// <summary>
         /// Raw Information
         /// </summary>
-        public BybitResponse? Infomation { get; set; } = default!;
+        public BybitResponse? Information { get; set; } = default!;
     }
 
     public class BybitResponse
