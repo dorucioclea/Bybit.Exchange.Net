@@ -10,8 +10,11 @@ namespace Bybit.Exchange.Net.Data
             [Description("Live")]
             Live = 0,
 
+            [Description("Demo")]
+            Demo = 1,
+
             [Description("Testnet")]
-            Testnet = 1,
+            Testnet = 2,
         };
 
         public enum Category

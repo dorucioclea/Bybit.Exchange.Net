@@ -153,9 +153,12 @@ namespace Bybit.Exchange.Net.Library
 
         public static string GetUrl(BybitRestOptions options, string url)
         {
-            var env = options.Environment == BybitEnvironment.Live ?
-                !string.IsNullOrEmpty(options.MainnetBaseURL) ? options.MainnetBaseURL : BybitBaseUrl.Mainnet :
-                !string.IsNullOrEmpty(options.TestnetBaseURL) ? options.TestnetBaseURL : BybitBaseUrl.Testnet;
+            var env = options.Environment == BybitEnvironment.Live ? BybitBaseDomain.Mainnet :
+                      options.Environment == BybitEnvironment.Demo ? BybitBaseDomain.Demo :
+                      options.Environment == BybitEnvironment.Testnet ? BybitBaseDomain.Testnet : string.Empty;
+
+            if (!string.IsNullOrEmpty(options.BaseURL))
+                env = options.BaseURL;
 
             var requestUrl = env + url;
             return requestUrl;
