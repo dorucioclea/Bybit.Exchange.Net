@@ -77,6 +77,18 @@ namespace Bybit.Exchange.Net.Data
             SellSideOfHedgeMode = 2
         }
 
+        public enum PositionStatus
+        {
+            [EnumMember(Value = "Normal")]
+            Normal = 0,
+
+            [EnumMember(Value = "Liq")]
+            Liq = 1,
+
+            [EnumMember(Value = "Adl")]
+            Adl = 2
+        }
+
         public enum TriggerDirection
         {
             [EnumMember(Value = "None")]
