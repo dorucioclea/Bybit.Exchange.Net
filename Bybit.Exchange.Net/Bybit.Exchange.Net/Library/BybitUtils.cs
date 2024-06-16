@@ -40,7 +40,9 @@ namespace Bybit.Exchange.Net.Library
                 return results;
             }
 
-            if (results.Response.Contains("retCode") && results.Response.Contains(":10004") && retry < 5)
+            if (results.Response.Contains("retCode") &&
+               (results.Response.Contains(":10002") || results.Response.Contains(":10004")) &&
+                retry < 5)
             {
                 await Task.Delay(200);
                 retry += 1;
@@ -80,7 +82,9 @@ namespace Bybit.Exchange.Net.Library
                 return results;
             }
 
-            if (results.Response.Contains("retCode") && results.Response.Contains(":10004") && retry < 5)
+            if (results.Response.Contains("retCode") &&
+               (results.Response.Contains(":10002") || results.Response.Contains(":10004")) &&
+                retry < 5)
             {
                 await Task.Delay(200);
                 retry += 1;
