@@ -17,7 +17,7 @@
 
 **Bybit.Exchange.Net** is a library designed for .NET projects, tailored for seamless interaction with the Bybit crypto exchange API. With a structure closely aligned with Bybit's API documentation, it prioritizes simplicity, offering rich models, enums, and convenient logging for easy integration into .NET projects. Ideal for developers building crypto trading applications on the Bybit.
 ## Prerequisites
- - **Windows:** .NET 8
+ - **Windows:** .NET 8, .NET 9
 
 ## Installation and sources
  - [NuGet package][nuget-url]
@@ -27,7 +27,7 @@
 The [Features][features-wiki-url] documentation provides an in-depth look at the functionalities and capabilities of our project. Understanding the available features.
 
 ## Key Features
-- Built with full compatibility for .NET 8, ensuring smooth execution on the latest .NET applications and projects.
+- Built with full compatibility for .NET 8 or .Net 9, ensuring smooth execution on the latest .NET applications and projects.
 
 - Designed with a structure closest to Bybit's API documentation, ensuring consistency and ease of understanding during integration.
 
